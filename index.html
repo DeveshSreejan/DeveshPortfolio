@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devesh Sreejan | Portfolio</title>
+  <meta name="description" content="Portfolio of Devesh Sreejan, CSE student at VIT Vellore." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">DS<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">&gt; Hello, world. I'm</p>
+        <h1 class="glitch" data-text="Devesh Sreejan">Devesh Sreejan</h1>
+        <h2 class="typing"><span id="typed"></span><span class="caret">|</span></h2>
+        <p class="hero-sub">CSE student at VIT Vellore who enjoys writing clean Python and cracking DSA problems.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn ghost">Get in Touch</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title reveal"><span>01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hi, I'm <strong>Devesh Sreejan</strong>, a Computer Science and Engineering student at
+            <strong>VIT Vellore</strong>. I love programming and spend a good part of my time solving
+            Data Structures and Algorithms problems, which keeps my problem-solving sharp.
+          </p>
+          <p>
+            I have a strong foundation in <strong>Python</strong> and enjoy turning ideas into small,
+            working projects. I'm always learning, and I'm looking for opportunities to build,
+            collaborate and grow as a developer.
+          </p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat"><h3 data-count="2">0</h3><p>Featured Projects</p></div>
+          <div class="stat"><h3>CSE</h3><p>VIT Vellore</p></div>
+          <div class="stat"><h3>Python</h3><p>Primary Language</p></div>
+          <div class="stat"><h3>DSA</h3><p>Daily Practice</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section-title reveal"><span>02.</span> Skills</h2>
+      <div class="skills-wrap">
+        <div class="skill reveal"><div class="skill-head"><span>Python</span><span>90%</span></div><div class="bar"><div class="fill" data-level="90"></div></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>Data Structures &amp; Algorithms</span><span>80%</span></div><div class="bar"><div class="fill" data-level="80"></div></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>Problem Solving</span><span>85%</span></div><div class="bar"><div class="fill" data-level="85"></div></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>HTML / CSS / JS</span><span>65%</span></div><div class="bar"><div class="fill" data-level="65"></div></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>Git &amp; GitHub</span><span>70%</span></div><div class="bar"><div class="fill" data-level="70"></div></div></div>
+      </div>
+      <div class="chips reveal">
+        <span>Python</span><span>DSA</span><span>LeetCode</span><span>Git</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="section-title reveal"><span>03.</span> Projects</h2>
+      <div class="project-grid">
+        <article class="card tilt reveal">
+          <div class="card-top">
+            <span class="folder">&#128193;</span>
+            <a href="https://github.com/DeveshSreejan/newTestRepo" target="_blank" rel="noopener" aria-label="GitHub repo">&#8599;</a>
+          </div>
+          <h3>Python Practice Lab</h3>
+          <p>
+            A collection of Python programs and experiments built while practising core concepts
+            and algorithmic problem solving. A sandbox for trying out ideas and improving code quality.
+          </p>
+          <ul class="tags"><li>Python</li><li>DSA</li><li>Git</li></ul>
+          <a class="card-link" href="https://github.com/DeveshSreejan/newTestRepo" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+
+        <article class="card tilt reveal">
+          <div class="card-top">
+            <span class="folder">&#127760;</span>
+            <a href="https://github.com/DeveshSreejan/Name-Website" target="_blank" rel="noopener" aria-label="GitHub repo">&#8599;</a>
+          </div>
+          <h3>Name Website</h3>
+          <p>
+            A simple, responsive web page that presents a personal name and introduction with a clean
+            layout. Built to practise front-end fundamentals and deploying a site online.
+          </p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <a class="card-link" href="https://github.com/DeveshSreejan/Name-Website" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2 class="section-title reveal"><span>04.</span> Let's Connect</h2>
+      <p class="contact-text reveal">
+        Interested in working together, or just want to talk code? Find me on these platforms.
+      </p>
+      <div class="social-grid reveal">
+        <a class="social" href="https://github.com/DeveshSreejan" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.13v3.16c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a class="social" href="https://www.linkedin.com/in/devesh-sreejan-15b17a1b9/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="social" href="https://leetcode.com/u/deveshsreejan/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M13.48 0a1.37 1.37 0 0 0-.96.44L3.9 9.4a4.6 4.6 0 0 0 0 6.5l4.4 4.55a4.5 4.5 0 0 0 6.4.1l2.4-2.4a1.4 1.4 0 0 0-2-1.98l-2.4 2.4a1.7 1.7 0 0 1-2.4-.04l-4.4-4.55a1.8 1.8 0 0 1 0-2.5l8.6-8.9A1.4 1.4 0 0 0 13.48 0zM20.6 13.2h-9.1a1.4 1.4 0 0 0 0 2.8h9.1a1.4 1.4 0 0 0 0-2.8z"/></svg>
+          <span>LeetCode</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Devesh Sreejan. Designed &amp; built with HTML, CSS &amp; JS.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">&uarr;</button>
+  <script src="script.js"></script>
+</body>
+</html>
